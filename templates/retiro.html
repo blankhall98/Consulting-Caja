@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+
+{%block title%}CAJA RETIRO{%endblock%}
+
+{%block content%}
+
+<div class="container">
+    <h1>RETIRO</h1>
+</div>
+
+<div class="container">
+    <h3>Datos del Retiro</h3>
+    <div class="container">
+        <form action="/retiro" method="post">
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="text" class="form-control" id="fecha" name="fecha">
+            </div>
+            <div class="mb-3">
+                <label for="monto_1000" class="form-label">Monto 1000</label>
+                <input type="text" class="form-control" id="monto_1000" name="monto_1000">
+            </div>
+            <div class="mb-3">
+                <label for="monto_500" class="form-label">Monto 500</label>
+                <input type="text" class="form-control" id="monto_500" name="monto_500">
+            </div>
+            <div class="mb-3">
+                <label for="monto_200" class="form-label">Monto 200</label>
+                <input type="text" class="form-control" id="monto_200" name="monto_200">
+            </div>
+            <div class="mb-3">
+                <label for="monto_100" class="form-label">Monto 100</label>
+                <input type="text" class="form-control" id="monto_100" name="monto_100">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+</div>
+
+{%endblock%}
